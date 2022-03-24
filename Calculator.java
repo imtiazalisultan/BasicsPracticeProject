@@ -1,26 +1,26 @@
 package com.company;
-import java.util.*;
+import java.util.*;                           // java predefined library files
 
 
 
 public class Calculator {
-    public static float additions(float x,float y){
+    public static float additions(float x,float y){   //method for addition
 
-        float additions=x+y;
+        float additions=x+y;                             
         System.out.println("Addition: "+additions);
         return 0;
     }
-    public static float subtractions(float x,float y){
+    public static float subtractions(float x,float y){   //Method for subtraction
         float subtraction=x-y;
         System.out.println("Subtraction: "+subtraction);
         return 0;
     }
- public static float multiplications(float x,float y){
+ public static float multiplications(float x,float y){    //Method for Multiplication
         float multiplication=x*y;
      System.out.println("Multiplication: "+multiplication);
      return 0;
  }
-  public static float divisions(float x, float y){
+  public static float divisions(float x, float y){          // method for division
      //  try{
            float division=x/y;
            System.out.println("Division: "+division);
@@ -32,7 +32,7 @@ public class Calculator {
        return 0;
     }
 
-public static float modulus(float x, float y){
+public static float modulus(float x, float y){            // method for modulus
    //     try{
             float modulus=x%y;
             System.out.println("Modulus: "+modulus);
@@ -43,7 +43,7 @@ public static float modulus(float x, float y){
         }*/
         return 0;
 }
-public static void choicesOperation(int cho,float x,float y ){
+public static void choicesOperation(int cho,float x,float y ){     // method for Choice of operation
     switch (cho) {
         case 1 -> System.out.println(additions(x,y));
         case 2 -> System.out.println(subtractions(x,y));
@@ -54,7 +54,7 @@ public static void choicesOperation(int cho,float x,float y ){
     }
     return ;
 }
-public static void main(String[]args){
+public static void main(String[]args){                // main class for taking inputs...
         Scanner sc=new Scanner(System.in);
     System.out.println("Enter the 1st Number: ");
     float num1=sc.nextFloat();
